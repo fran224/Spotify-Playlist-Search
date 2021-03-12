@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('GothamBold'), url(./fonts/Gotham-Bold.otf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body { 
+  background:  url("bg.jpg") repeat;
+  background-size: 100%;
+  background-position: 100% 40%;
+  font-family: "Gotham";
+  font-weight: 400;
+}
+
+
+.nav {
+  height: 12vh;
+  background-color: black ;
+}
+
+.logo {
+  width: auto;
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+}
+
+a {
+  color: #1DB954;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c9c3f;
+  text-decoration: none;
+}
+
+.main {
+  margin-top: 3rem;
+  padding: 2rem;
+  max-width: 60%;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  background: rgb(0, 0, 0); /* fallback for browsers that don't understand rgba */
+  background-color: rgba(0,0,0,0.88); /* slighly transparent white */
+}
+
+.player {
+  margin-left: 10rem;
+}
+
+span.caret {
+  position: absolute;
+  left: 90%;
+  top: 45%;
+}
+
+label {
+  padding-top:5px;
+  color: white;
+}
+
+.form-label {
+  padding-left:0px !important;
+}
+
+.dropdowns {
+  margin-right: -10em!important;
+}
+
+.footer {
+  height: 8vh;
+  background-color: black;
+  color: white;
+  font-size: 0.85em;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  padding:16px;
+  
+}
+
+
+@media (max-width: 500px) {
+  .logo {
+    height: 70%;
+    margin-top: 1.1rem;
+  }
+  .dropdowns {
+    margin-left: 0.8rem;
+  }  
+  .player {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .main {
+    max-width: 85%;
+  }
 }
